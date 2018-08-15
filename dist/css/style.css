@@ -114,8 +114,8 @@ html.open{overflow:hidden}
 .vwrap .videobox{height:300px;margin-top:-150px}
 }
 .popUpblack{background:url(../images/black.png) repeat;width:100%;height:100%;position:fixed;left:0;top:0;z-index:1010;display:none}
-.popUp{width:220px;height:242px;border:5px solid #0079c3;background:#fff;position:fixed;left:50%;top:50%;margin:-87px 0 0 -115px;z-index:1004}
-.popUp .t{padding:0 0 0 10px;height:26px;line-height:26px;color:#fff;font-weight:700;border-bottom:1px solid #0079c3;background:#0079c3}
+.popUp{width:220px;height:242px;border:5px solid #0c4981;background:#fff;position:absolute;left:50%;top:50%;margin:-126px 0 0 -115px;z-index:1004}
+.popUp .t{padding:0 0 0 10px;height:26px;line-height:26px;color:#fff;font-weight:700;border-bottom:1px solid #0c4981;background:#0c4981}
 .popUp .t .close{padding:0 10px 0 0;float:right;cursor:pointer;color:#fff;font-weight:400}
 .popUp .img{padding:20px}
 .popUp .img img{width:100%;height:100%;display:block}
@@ -1333,11 +1333,11 @@ a{color:#666}
 .cn-list .ca:before{content:"";position:absolute;width:100%;left:0;top:auto;bottom:0;height:0;background:#f0e5db;-webkit-transition:.4s;-moz-transition:.4s;transition:.4s}
 .cn-list .date{font-size:12px;color:#999;margin-top:15px;position:relative}
 .cn-list .nowti{position:relative}
-.cn-list .sa{position:absolute;top:30px;right:30px;background-position:-134px -46px;width:15px;height:17px;-webkit-transition:0s;-moz-transition:0s;transition:0s}
+.cn-list .sa{float:none!important;padding:0!important;margin:0!important;position:absolute;top:30px;right:30px;background-image:url(../images/aicos.png)!important;background-repeat:no-repeat;background-position:-134px -46px;width:15px;height:17px;-webkit-transition:0s;-moz-transition:0s;transition:0s}
 .nw1 .cn-list{margin-bottom:85px}
 @media screen and (min-width:1025px){
 .cn-list .ca:hover:before{height:100%;top:0;bottom:auto}
-.cn-list .sa:hover{background:url(../images/ico1.png) no-repeat}
+.cn-list .sa:hover{background-images:url(../images/ico1.png)!important}
 }
 @media screen and (max-width:1366px){
 .nw1 .cn-list{margin-bottom:75px}
@@ -1820,7 +1820,7 @@ a{color:#666}
 .itop3 .smouse{border-color:#999}
 .itop3 .smouse:after,.itop3 .smouse:before{background:#999}
 .itop5 .row-controls,.itop5 .smouse,.itop5 .t-cop{opacity:0;visibility:hidden}
-.whiteCover{position:absolute;z-index:929;top:0;bottom:0;left:0;right:0;background:url(../images/bg3.png);opacity:0;visibility:hidden;-webkit-transition:.8s;-moz-transition:.8s;transition:.8s}
+.whiteCover{position:absolute;z-index:98;top:0;bottom:0;left:0;right:0;background:url(../images/bg3.png);opacity:0;visibility:hidden;-webkit-transition:.8s;-moz-transition:.8s;transition:.8s}
 .active2 .whiteCover{opacity:1;visibility:visible}
 @media screen and (min-width:1025px){
 .inw-list .n1 a:hover .pic,.inw-list .n3 a:hover .pic{opacity:.8}
