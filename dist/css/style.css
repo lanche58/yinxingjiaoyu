@@ -113,12 +113,13 @@ html.open{overflow:hidden}
 @media screen and (max-width:481px){
 .vwrap .videobox{height:300px;margin-top:-150px}
 }
-.popUpblack{background:url(../images/black.png) repeat;width:100%;height:100%;position:fixed;left:0;top:0;z-index:1010;display:none}
-.popUp{width:220px;height:242px;border:5px solid #0c4981;background:#fff;position:absolute;left:50%;top:50%;margin:-126px 0 0 -115px;z-index:1004}
-.popUp .t{padding:0 0 0 10px;height:26px;line-height:26px;color:#fff;font-weight:700;border-bottom:1px solid #0c4981;background:#0c4981}
-.popUp .t .close{padding:0 10px 0 0;float:right;cursor:pointer;color:#fff;font-weight:400}
+.popUpblack{position:fixed;top:0;bottom:0;left:0;right:0;z-index:1020;background:url(../images/black.png);display:none}
+.popUpblack.show .popUp{-webkit-transform:none;-moz-transform:none;-ms-transform:none;transform:none;opacity:1;visibility:visible;-webkit-transition:.6s;-moz-transition:.6s;transition:.6s}
+.popUp{position:absolute;left:50%;top:50%;margin:-126px 0 0 -115px;width:220px;height:242px;border:5px solid #0c4981;background:#fff;opacity:0;visibility:hidden;-webkit-transform:translateY(20%);-moz-transform:translateY(20%);-ms-transform:translateY(20%);transform:translateY(20%)}
+.popUp .t{padding:0 10px;height:26px;line-height:26px;color:#fff;font-weight:700;background:#0c4981;overflow:hidden}
+.popUp .t .close{float:right;cursor:pointer;color:#fff;font-weight:400}
 .popUp .img{padding:20px}
-.popUp .img img{width:100%;height:100%;display:block}
+.popUp .img img{width:100%;display:block}
 .mtrans,.mtrans:hover{-webkit-transition:all .8s cubic-bezier(.19,1,.22,1) 0s;-moz-transition:all .8s cubic-bezier(.19,1,.22,1) 0s;transition:all .8s cubic-bezier(.19,1,.22,1) 0s;-ms-transition:all .8s cubic-bezier(.19,1,.22,1) 0s}
 .mtrans-fast,.mtrans-fast:hover{-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out}
 .menu-handler{display:none;background:0 0;overflow:hidden;width:60px;height:60px;cursor:pointer;position:fixed;right:0;top:0;transition:all .3s cubic-bezier(.445,.145,.355,1);-webkit-transition:all .3s cubic-bezier(.445,.145,.355,1);-moz-transition:all .3s cubic-bezier(.445,.145,.355,1);z-index:1012}
