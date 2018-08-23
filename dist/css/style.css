@@ -508,6 +508,15 @@ from{width:0}
 .bubbly-button:hover:before{display:block;-webkit-animation:topBubbles ease-in-out .75s forwards;-moz-animation:topBubbles ease-in-out .75s forwards;animation:topBubbles ease-in-out .75s forwards}
 .bubbly-button:hover:after{display:block;-webkit-animation:bottomBubbles ease-in-out .75s forwards;-moz-animation:bottomBubbles ease-in-out .75s forwards;animation:bottomBubbles ease-in-out .75s forwards}
 }
+.dl{display:block;z-index:9;position:absolute;background:#fff;-webkit-transition:.4s;-moz-transition:.4s;transition:.4s}
+.dl-b,.dl-t{width:0;height:1px}
+.dl-l,.dl-r{height:0;width:1px}
+.dl-l,.dl-t{left:0;top:0}
+.dl-b,.dl-r{right:0;bottom:0}
+@media screen and (min-width:1025px){
+.dl-h:hover .dl-b,.dl-h:hover .dl-t{width:100%}
+.dl-h:hover .dl-l,.dl-h:hover .dl-r{height:100%}
+}
 a{color:#666}
 .pbanner{position:relative;overflow:hidden;color:#fff}
 .pbanner .cover{background:rgba(0,0,0,.2)}
@@ -934,7 +943,7 @@ a{color:#666}
 .ab5{min-height:300px;padding:115px 0}
 .ab5 .l{width:52.5%}
 .ab5 .r{width:41.5%}
-.ab5 .pic{margin-bottom:20px}
+.ab5 .ti{font-size:24px;font-weight:700;color:#b18a6b;margin-bottom:20px}
 @media screen and (max-width:1366px){
 .ab5{padding:95px 0}
 }
@@ -942,12 +951,12 @@ a{color:#666}
 .ab5{padding:75px 0}
 .ab5 .r{width:31.5%;float:left}
 .ab5 .l{width:62.5%;float:right}
-.ab5 .pic{margin-bottom:10px}
 }
 @media screen and (max-width:601px){
 .ab5{padding:14vw 0}
 .ab5 .r{float:none;width:100%;color:#333}
 .ab5 .l{float:none;width:100%;margin-top:10vw}
+.ab5 .ti{font-size:20px}
 }
 .pw2{width:1580px;margin:0 auto}
 @media screen and (max-width:1820px){
@@ -1982,4 +1991,63 @@ a{color:#666}
 @media screen and (max-width:481px){
 .sos-ctt .b{padding-top:10px}
 .sos-bg{height:205px}
+}
+.lea-list{margin-left:-20px}
+.lea-list li{width:20%;float:left;margin-bottom:20px}
+.lea-list a{display:block;margin-left:20px;background:#f4f4f4}
+.lea-list .line{position:absolute;top:5px;bottom:5px;left:5px;right:5px}
+.lea-list .txts{height:240px;padding:0 15px;overflow:hidden}
+.lea-list .nowti{font-size:18px;color:#333;margin-top:15px}
+.lea-list .ti{font-size:15px;line-height:24px!important;height:48px;padding-top:10px;text-align:justify;margin-top:10px;border-top:1px solid #ccc;color:#b18a6b;overflow:hidden}
+.lea-list .tx{overflow:visible;margin-top:10px}
+.lea-list .tx p{padding-left:15px;position:relative}
+.lea-list .tx p:before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:#b18a6b;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
+@media screen and (max-width:1366px){
+.lea-list .txts{height:260px}
+.lea-list a{margin-left:10px}
+.lea-list{margin-left:-10px}
+}
+@media screen and (max-width:1024px){
+.lea-list li{width:25%}
+.lea-list a{margin-left:20px}
+.lea-list{margin-left:-20px}
+}
+@media screen and (max-width:861px){
+.lea-list li{width:33.33%}
+}
+@media screen and (max-width:641px){
+.lea-list .txts{height:270px}
+}
+@media screen and (max-width:601px){
+.lea-list li{width:50%}
+.lea-list .txts{height:240px}
+}
+@media screen and (max-width:481px){
+.lea-list a{margin-left:10px}
+.lea-list{margin-left:-10px}
+.lea-list .nowti{font-size:16px}
+.lea-list .ti{font-size:14px;line-height:20px!important;height:40px;padding-top:8px;margin-top:8px}
+.lea-list .tx p:before{width:4px;height:4px;top:8px}
+.lea-list .tx p{padding-left:10px}
+.lea-list .tx{font-size:12px;line-height:20px!important}
+.lea-list li{margin-bottom:10px}
+}
+.ab1 .ho-list li{border-color:#ccc}
+.ab1 .ho-list li:first-child{background-color:#0c4981;color:#fff}
+.ho-tx{padding:0 65px;margin-top:45px}
+.ho-ti{overflow:hidden;padding:0 65px;margin-bottom:25px}
+.ho-ti .ti{float:left;font-size:20px;color:#333;margin-right:30px}
+.ho-ti .w{width:550px;max-width:100%}
+@media screen and (max-width:1366px){
+.ho-ti,.ho-tx{padding:0 45px}
+}
+@media screen and (max-width:1024px){
+.ho-ti,.ho-tx{padding:0 5%}
+}
+@media screen and (max-width:601px){
+.ho-tx{margin-top:8vw}
+.ho-ti,.ho-tx{padding:0}
+}
+@media screen and (max-width:481px){
+.ho-ti .ti{float:none;margin-bottom:10px}
 }
